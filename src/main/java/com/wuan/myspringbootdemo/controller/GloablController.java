@@ -1,13 +1,15 @@
-package com.wuancake.oa.controller;
+package com.wuan.myspringbootdemo.controller;
 
-import com.wuancake.oa.biz.GlobalBiz;
-import com.wuancake.oa.entity.Employee;
+
+import com.wuan.myspringbootdemo.biz.GlobalBiz;
+import com.wuan.myspringbootdemo.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
+
 @Controller("globalController")
 public class GloablController {
     @Autowired
@@ -44,7 +46,7 @@ public class GloablController {
     }
 
     @RequestMapping("/change_password")
-    public String changePassword(HttpSession session, @RequestParam String old, @RequestParam String new1 ,@RequestParam String new2){
+    public String changePassword(HttpSession session, @RequestParam String old, @RequestParam String new1 , @RequestParam String new2){
         Employee employee = (Employee)session.getAttribute("employee");
         if(employee.getPassword().equals(old)){
             if(new1.equals(new2)){

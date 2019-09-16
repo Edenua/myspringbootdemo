@@ -1,16 +1,18 @@
-package com.wuancake.oa.controller;
+package com.wuan.myspringbootdemo.controller;
 
-import com.wuancake.oa.biz.ClaimVoucherBiz;
-import com.wuancake.oa.dto.ClaimVoucherInfo;
-import com.wuancake.oa.entity.DealRecord;
-import com.wuancake.oa.entity.Employee;
-import com.wuancake.oa.global.Contant;
+
+import com.wuan.myspringbootdemo.biz.ClaimVoucherBiz;
+import com.wuan.myspringbootdemo.dto.ClaimVoucherInfo;
+import com.wuan.myspringbootdemo.entity.DealRecord;
+import com.wuan.myspringbootdemo.entity.Employee;
+import com.wuan.myspringbootdemo.global.Contant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpSession;
 import java.util.Map;
+
 @Controller("claimVoucherController")
 @RequestMapping("/claim_voucher")
 public class ClaimVoucherController {

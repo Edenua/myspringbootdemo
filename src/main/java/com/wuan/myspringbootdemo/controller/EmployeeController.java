@@ -1,10 +1,10 @@
-package com.wuancake.oa.controller;
+package com.wuan.myspringbootdemo.controller;
 
-import com.wuancake.oa.biz.DepartmentBiz;
-import com.wuancake.oa.biz.EmployeeBiz;
-import com.wuancake.oa.entity.Department;
-import com.wuancake.oa.entity.Employee;
-import com.wuancake.oa.global.Contant;
+
+import com.wuan.myspringbootdemo.biz.DepartmentBiz;
+import com.wuan.myspringbootdemo.biz.EmployeeBiz;
+import com.wuan.myspringbootdemo.entity.Employee;
+import com.wuan.myspringbootdemo.global.Contant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
